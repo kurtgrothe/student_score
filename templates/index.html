@@ -7,22 +7,20 @@
 </head>
 <body>
     <header>
-        <h1>Breast Cancer Classification</h1>
+        <h1>Race Prediction Model</h1>
     </header>
     <form action="{{ url_for('predict')}}" method="POST">
-        <legend>Please enter the following measurements:</legend>
+        <legend>Please enter the following scores:</legend>
 
-        <label for="perimeter_worst">perimeter_worst:</label>
-        <input type="text" name="perimeter_worst" id="perimeter_worst" required>
+        <label for="reading_score">Reading Score:</label>
+        <input type="text" name="Reading Score" id="reading_score" required>
 
-        <label for="radius_worst">radius_worst:</label>
-        <input type="text" name="radius_worst" id="radius_worst" required>
+        <label for="math_score">Math Score:</label>
+        <input type="text" name="math_score" id="math_score" required>
 
-        <label for="concave_points_mean">concave_points_mean:</label>
-        <input type="text" name="concave_points_mean" id="concave_points_mean" required>
+        <label for="writing_score">Writing Score:</label>
+        <input type="text" name="writing_score" id="writing_score" required>
 
-        <label for="area_worst">area_worst:</label>
-        <input type="text" name="area_worst" id="area_worst" required>
         <br>
         <input type="submit" value="Submit">
    </form>
